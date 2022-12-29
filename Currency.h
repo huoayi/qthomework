@@ -45,7 +45,6 @@ private:
     double chinaToElse(double value, ECalType type);
     double europeToElse(double value, ECalType type);
     double elseToElse(double value, ECalType type1, ECalType type2);
-
 };
 
 #endif // CURRENCY_H

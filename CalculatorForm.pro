@@ -18,12 +18,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Capcaity.cpp \
     Currency.cpp \
+    DataCal.cpp \
     form.cpp \
     main.cpp
 
 HEADERS += \
     Capcaity.h \
     Currency.h \
+    DataCal.h \
     capcaity.h \
     form.h
 
