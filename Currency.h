@@ -38,7 +38,14 @@ private:
     ECalType m_upType;
     ECalType m_downType;
 private:
+    double dollarToElse(double value, ECalType type);
+    double japanToElse(double value, ECalType type);
+    double engToElse(double value, ECalType type);
+    double russiaToElse(double value, ECalType type);
+    double chinaToElse(double value, ECalType type);
+    double europeToElse(double value, ECalType type);
     double elseToElse(double value, ECalType type1, ECalType type2);
+
 };
 
 #endif // CURRENCY_H
