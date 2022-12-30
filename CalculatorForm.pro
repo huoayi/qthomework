@@ -19,6 +19,7 @@ SOURCES += \
     Capcaity.cpp \
     Currency.cpp \
     DataCal.cpp \
+    Programmer.cpp \
     form.cpp \
     main.cpp
 
@@ -26,6 +27,7 @@ HEADERS += \
     Capcaity.h \
     Currency.h \
     DataCal.h \
+    Programmer.h \
     capcaity.h \
     form.h
 
