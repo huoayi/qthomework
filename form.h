@@ -6,18 +6,18 @@
 namespace Ui {
 class Form;
 }
-//枚举
-enum ECalType
-{
-    eAdd = 0,
-    eSub,
-    eMult,
-    eDiv
-};
 
 class Form : public QWidget
 {
     Q_OBJECT
+    //枚举
+    enum ECalType
+    {
+        eAdd = 0,
+        eSub,
+        eMult,
+        eDiv
+    };
 
 public:
     explicit Form(QWidget *parent = nullptr);
@@ -25,8 +25,6 @@ public:
 public slots:
     //当数字按钮被按下
     void onNumberClicked();
-    //当进制转换按钮被按下
-    void onConvertClicked();
     //加减乘除
     void onCalClicked();
 private slots:
@@ -41,27 +39,17 @@ private slots:
     //等号
     void on_btn_equal_clicked();
 
+    void on_btn_cal_2x_clicked();
+
+    void on_btn_cal_x2_clicked();
+
+    void on_btn_cal_1x_clicked();
+
 private:
     bool m_bSignClick;
     double m_number1;
     ECalType m_CalType;
-    bool is_minus;//是否负数
-    bool is_float;//是否小数
     bool m_isEqual;
-private:
-    //转二进制
-    void toTwo();
-    //转八进制
-    void toEight();
-    //转十进制
-    void toTen();
-    //转十六进制
-    void toSixteen();
-    QString delete_zero(QString ret);
-    int twoToeight(QString str);
-    int twoTosixteen(QString str);
-    QString eightTotwo(int num);
-    QString sixteenTotwo(int num);
 private:
     Ui::Form *ui;
 };
